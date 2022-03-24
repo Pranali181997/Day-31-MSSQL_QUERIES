@@ -39,3 +39,11 @@ ALTER table emp_Payroll ADD EmployeeAddress VARCHAR(100) NOT NULL DEFAULT 'INDIA
 ALTER TABLE emp_Payroll ADD Department VARCHAR(30) NOT NULL DEFAULT 'Research';
 UPDATE emp_Payroll SET Department = 'Science' WHERE Emp_ID = 210;
 SELECT * FROM emp_Payroll
+
+--UC-9-ADD COLUMN FOT DEDUCTION TAXABLE PAY BASIC PAY NET PAY
+Alter Table emp_Payroll Add Basic_Bay BIGINT ;
+Alter Table emp_Payroll Add Deduction BIGINT;
+Alter Table emp_Payroll Add TaxablePay FLOAT NOT NULL DEFAULT 0.00;
+ALTER TABLE emp_Payroll ADD IncomeTax FLOAT NOT NULL DEFAULT 0.00;
+ALTER TABLE emp_Payroll ADD NetPay FLOAT NOT NULL DEFAULT 0.00;
+
