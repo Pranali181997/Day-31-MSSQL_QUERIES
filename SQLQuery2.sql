@@ -47,3 +47,10 @@ Alter Table emp_Payroll Add TaxablePay FLOAT NOT NULL DEFAULT 0.00;
 ALTER TABLE emp_Payroll ADD IncomeTax FLOAT NOT NULL DEFAULT 0.00;
 ALTER TABLE emp_Payroll ADD NetPay FLOAT NOT NULL DEFAULT 0.00;
 
+--UC10 Adding Department of Terisa as Sales & Marketing Both
+UPDATE emp_Payroll SET Department = 'Sales' WHERE Emp_NAME = 'Terisa';
+INSERT INTO emp_Payroll 
+VALUES
+('Terisa',2000000,'2022-03-21','F',125251251252,'INDIA', 'sales',NULL,NUll,0.00,0.00,0.00);
+SELECT * FROM emp_Payroll
+
