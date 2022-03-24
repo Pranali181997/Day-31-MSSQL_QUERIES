@@ -13,3 +13,8 @@ values
 
  --UC-4-SELECT AND FETCH ALL THE DATA
 Select * from emp_Payroll
+
+--UC-5-USE WHERE,CAST,NOE,AND OPERATIONS
+select SALARY from emp_Payroll where Emp_NAME='Bill'
+Select * FROM emp_Payroll
+WHERE STARTDATE BETWEEN CAST('2018-01-01' AS DATE) AND GETDATE()
