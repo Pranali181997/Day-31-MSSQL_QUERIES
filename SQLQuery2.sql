@@ -30,3 +30,12 @@ Select SUM(SALARY) FROM emp_Payroll WHERE gender ='M'
 Select MAX(SALARY) FROM emp_Payroll WHERE gender ='M'
 Select AVG(SALARY) FROM emp_Payroll WHERE gender ='M'
 Select COUNT(SALARY) FROM emp_Payroll WHERE gender ='M'
+
+--UC8 Adding Employee Additional Information
+
+ALTER TABLE emp_Payroll ADD PhoneNo BIGINT;
+UPDATE emp_Payroll SET PhoneNo = 8956418356 WHERE Emp_ID = 320;
+ALTER table emp_Payroll ADD EmployeeAddress VARCHAR(100) NOT NULL DEFAULT 'INDIA';
+ALTER TABLE emp_Payroll ADD Department VARCHAR(30) NOT NULL DEFAULT 'Research';
+UPDATE emp_Payroll SET Department = 'Science' WHERE Emp_ID = 210;
+SELECT * FROM emp_Payroll
