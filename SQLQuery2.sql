@@ -18,3 +18,9 @@ Select * from emp_Payroll
 select SALARY from emp_Payroll where Emp_NAME='Bill'
 Select * FROM emp_Payroll
 WHERE STARTDATE BETWEEN CAST('2018-01-01' AS DATE) AND GETDATE()
+
+--UC-6-Add Column
+Alter Table emp_Payroll Add gender varchar(10)
+update emp_Payroll set gender ='M' where Emp_ID=100;
+update emp_Payroll set gender ='F' where Emp_ID=210;
+update emp_Payroll set gender ='M' where Emp_ID=320;
