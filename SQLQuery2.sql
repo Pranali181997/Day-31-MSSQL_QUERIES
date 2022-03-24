@@ -11,4 +11,5 @@ values
  ('Terisa', 200000, '2019-11-13'),
  ('Charlie', 500000, '2020-05-21')
 
- 
+ --UC-4-SELECT AND FETCH ALL THE DATA
+Select * from emp_Payroll
