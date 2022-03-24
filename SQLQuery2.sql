@@ -24,3 +24,9 @@ Alter Table emp_Payroll Add gender varchar(10)
 update emp_Payroll set gender ='M' where Emp_ID=100;
 update emp_Payroll set gender ='F' where Emp_ID=210;
 update emp_Payroll set gender ='M' where Emp_ID=320;
+
+--UC-7-SUM(),MAX(),MIN(),AVG(),COUNT()
+Select SUM(SALARY) FROM emp_Payroll WHERE gender ='M'
+Select MAX(SALARY) FROM emp_Payroll WHERE gender ='M'
+Select AVG(SALARY) FROM emp_Payroll WHERE gender ='M'
+Select COUNT(SALARY) FROM emp_Payroll WHERE gender ='M'
