@@ -51,6 +51,7 @@ ALTER TABLE emp_Payroll ADD NetPay FLOAT NOT NULL DEFAULT 0.00;
 UPDATE emp_Payroll SET Department = 'Sales' WHERE Emp_NAME = 'Terisa';
 INSERT INTO emp_Payroll 
 VALUES
-('Terisa',2000000,'2022-03-21','F',125251251252,'INDIA', 'sales',NULL,NUll,0.00,0.00,0.00);
+('Terisa',2000000,'2022-03-21','F',125251251252,'INDIA', 'Marketing',NULL,NUll,0.00,0.00,0.00);
 SELECT * FROM emp_Payroll
+delete from emp_Payroll where Emp_ID=430
 
